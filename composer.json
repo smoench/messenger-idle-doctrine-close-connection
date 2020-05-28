@@ -4,7 +4,6 @@
   "license": "MIT",
   "require": {
     "php": "^7.2",
-    "react/event-loop": "^1.1",
     "symfony/doctrine-bridge": "^4.4|^5.0",
     "symfony/event-dispatcher": "^4.4|^5.0",
     "symfony/messenger": "^4.4|^5.0"
@@ -14,7 +13,15 @@
       "Smoench\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\Smoench\\": "tests"
+    }
+  },
   "config": {
     "sort-packages": true
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^5.0"
   }
 }
