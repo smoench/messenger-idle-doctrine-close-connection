@@ -21,7 +21,7 @@ class IdleCloseConnectionSubscriber implements EventSubscriberInterface
     /** @var LoopInterface */
     private $loop;
 
-    /** @var int */
+    /** @var float */
     private $interval;
 
     /** @var TimerInterface|null */
